@@ -1,5 +1,4 @@
 import React, {Component} from 'react';
-import Figure from "react-bootstrap/Figure";
 import Container from "react-bootstrap/Container";
 import Row from 'react-bootstrap/Row'
 import Col from 'react-bootstrap/Col'
@@ -14,8 +13,10 @@ import Panther from "./img/blackpanther.jpg"
 import Infinity from "./img/infinity.jpg"
 import Endgame from "./img/endgame.jpg"
 import Far from "./img/farfromhome.jpg"
+import Item from './figure.js';
 
-export class Home extends Component{
+
+class Home extends Component{
     render(){
         return(
             <Container fluid className="bg">
@@ -25,114 +26,57 @@ export class Home extends Component{
               <Container>
                 <Row>
                     <Col>
-                    <Figure className= 'figure'>
-                        <Figure.Image
-                        className='image'
-                        src={Avengers}
+                        <Item src = {Avengers}
+                              text = 'The Avengers (2012)'
                         />
-                        <Figure.Caption className="text">
-                           The Avengers (2012)
-                        </Figure.Caption>
-                    </Figure>
                     </Col>
                     <Col>
-                    <Figure className= 'figure'>
-                        <Figure.Image
-                        className='image'
-                        src={Ultron}
+                        <Item src = {Ultron}
+                              text = 'Avengers : Age of Ultron (2015)'
                         />
-                        <Figure.Caption className="text">
-                        Avengers : Age of Ultron (2015)
-                        </Figure.Caption>
-                    </Figure>
                     </Col>
                     <Col>
-                    <Figure className= 'figure'>
-                        <Figure.Image
-                        className='image'
-                        src={Strange}
+                        <Item src = {Strange}
+                              text = 'Doctor Strange (2016)'
                         />
-                        <Figure.Caption className="text">
-                        Doctor Strange (2016)
-                        </Figure.Caption>
-                    </Figure>
-                    </Col>
+                    </Col>    
                 </Row>
                 <Row>
                     <Col>
-                    <Figure className= 'figure'>
-                        <Figure.Image
-                        className='image'
-                        src={Homecoming}
+                        <Item src = {Homecoming}
+                              text = 'Spiderman : Homecoming (2017)'
                         />
-                        <Figure.Caption className="text">
-                           Spiderman : Homecoming (2017)
-                        </Figure.Caption>
-                    </Figure>
                     </Col>
                     <Col>
-                    <Figure className= 'figure'>
-                        <Figure.Image
-                        className='image'
-                        src={Ragnarok}
+                        <Item src = {Ragnarok}
+                              text = 'Thor : Ragnarok (2017)'
                         />
-                        <Figure.Caption className="text">
-                        Thor : Ragnarok (2017)
-                        </Figure.Caption>
-                    </Figure>
                     </Col>
                     <Col>
-                    <Figure className= 'figure'>
-                        <Figure.Image
-                        className='image'
-                        src={Panther}
+                        <Item src = {Panther}
+                              text = 'Black Panther (2018)'
                         />
-                        <Figure.Caption className="text">
-                        Black Panther (2018)
-                        </Figure.Caption>
-                    </Figure>
-                    </Col>
+                    </Col>    
                 </Row>
                 <Row>
                     <Col>
-                    <Figure className= 'figure'>
-                        <Figure.Image
-                        className='image'
-                        src={Infinity}
+                        <Item src = {Infinity}
+                              text = 'Avengers : Infinity War (2018)'
                         />
-                        <Figure.Caption className="text">
-                           Avengers : Infinity War (2018)
-                        </Figure.Caption>
-                    </Figure>
                     </Col>
                     <Col>
-                    <Figure className= 'figure'>
-                        <Figure.Image
-                        className='image'
-                        src={Endgame}
+                        <Item src = {Endgame}
+                              text = 'Avengers : End Game (2019)'
                         />
-                        <Figure.Caption className="text">
-                        Avengers : End Game (2019)
-                        </Figure.Caption>
-                    </Figure>
                     </Col>
                     <Col>
-                    <Figure className= 'figure'>
-                        <Figure.Image
-                        className='image'
-                        src={Far}
+                        <Item src = {Far}
+                              text = 'Spiderman : Far From Home (2019)'
                         />
-                        <Figure.Caption className="text">
-                        Spiderman : Far From Home (2019)
-                        </Figure.Caption>
-                    </Figure>
-                    </Col>
+                    </Col>    
                 </Row>
-            </Container>
-
-            </Container>
-    
-            
+               </Container>
+               </Container>
         )
     }
 }

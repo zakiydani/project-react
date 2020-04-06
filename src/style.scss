@@ -10,6 +10,9 @@
     background-color: #1F2833;
     
 }
+.nav-tabs>li.active>a{ 
+    border-bottom: 2px solid #DF4E8D
+}
 .text{
     color: white;
 }
@@ -20,7 +23,8 @@
     width : 300px;
 }
 .h2 {
-    padding: 30px;
+    padding-top: 100px;
+    padding-bottom: 50px;
     color: white;
 }
 .btn{

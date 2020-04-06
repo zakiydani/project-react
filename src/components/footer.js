@@ -1,16 +1,15 @@
 import React, {Component} from 'react';
-import Container from 'react-bootstrap/Container';
 import '../style.scss'
 
 
 export class Footer extends Component {
     render(){
         return(
-            <Container fluid className="footer">
-                <div className="text-center">
-                <span className="text">&copy; ZakiyDani & GoFlix 2020.</span>
+            <footer id="sticky-footer" class="py-4 bg-dark text-white-50">
+                <div class="container text-center">
+                    <span>Copyright &copy;ZakiyDani</span>
                 </div>
-            </Container>
+            </footer>
         )
     }
 }
